@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactMessageController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Livewire;
 use Illuminate\Support\Facades\Response;
@@ -18,6 +20,6 @@ Livewire::setScriptRoute(function ($handle) {
 /*
 / END
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ProjectController::class, 'home']);
+Route::get('/project/{slug}', [ProjectController::class, 'detail']);
+Route::post('/contact', [ContactMessageController::class, 'store']);
