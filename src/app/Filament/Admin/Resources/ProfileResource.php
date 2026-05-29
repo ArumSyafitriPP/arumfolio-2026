@@ -56,7 +56,7 @@ class ProfileResource extends Resource
                 TagsInput::make('tech_stack')
                     ->separator(',')
                     ->placeholder('Laravel, Filament, MariaDB'),
-                    
+
                 TextInput::make('project_title')
                     ->required(),
 
@@ -76,8 +76,7 @@ class ProfileResource extends Resource
                 TextColumn::make('name')
                     ->searchable(),
                 TextColumn::make('role'),
-                TextColumn::make('project_title'),
-                TextColumn::make('project_subtitle'),
+                TextColumn::make('tech_stack'),
                 TextColumn::make('created_at')
                     ->dateTime(),
 
@@ -86,7 +85,8 @@ class ProfileResource extends Resource
                 //
             ])
             ->actions([
-
+                Tables\Actions\ViewAction::make(),
+                Tables\Actions\DeleteAction::make(),
                 Tables\Actions\EditAction::make(),
 
             ])

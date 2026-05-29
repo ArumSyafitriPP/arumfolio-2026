@@ -1,59 +1,100 @@
-🌐 Arumfolio
+# 🌐 ARUMFOLIO
 
-📌 Overview
+### Laravel Portfolio & Project Showcase
 
-Arumfolio merupakan website portofolio pribadi berbasis Laravel yang dirancang untuk menampilkan profil, proyek, layanan, dan informasi kontak secara profesional. Website ini dilengkapi dengan panel administrasi berbasis Filament sehingga seluruh konten dapat dikelola secara dinamis melalui dashboard tanpa perlu melakukan perubahan langsung pada kode program.
-Salah satu proyek utama yang ditampilkan dalam portofolio ini adalah Sistem Monitoring Service Elektronik, sebuah aplikasi berbasis web yang dirancang untuk membantu usaha service elektronik dalam mengelola proses perbaikan perangkat secara digital.
+Menampilkan profil profesional, portofolio proyek, layanan, dan Sistem Monitoring Service Elektronik dengan pengelolaan data melalui Admin Panel.
 
-📖 Tentang Sistem Monitoring Service Elektronik
+---
 
-Sistem Monitoring Service Elektronik merupakan aplikasi berbasis web yang memungkinkan pengelolaan proses service elektronik secara terpusat. Sistem ini membantu admin dalam mengelola data pelanggan, status perbaikan, serta progres service, sementara pelanggan dapat memperoleh informasi terkait perkembangan proses perbaikan secara lebih transparan.
-Permasalahan yang sering terjadi pada usaha service elektronik adalah penggunaan pencatatan manual yang berisiko menyebabkan kehilangan data, kesalahan pencatatan, dan keterlambatan penyampaian informasi kepada pelanggan. Oleh karena itu, sistem ini dikembangkan sebagai solusi digital yang lebih efektif dan efisien.
+## 📌 Overview
 
-Tujuan Sistem
-1. Mengelola data service elektronik secara terpusat
-2. Memantau progres perbaikan perangkat
-3. Menyediakan informasi status service secara transparan
-4. Mempermudah pengelolaan data pelanggan
-5. Mendukung digitalisasi proses bisnis service elektronik
+Arumfolio merupakan website portofolio personal berbasis Laravel yang dirancang untuk menampilkan profil profesional, proyek, layanan, dan informasi kontak secara modern dan responsif.
+Seluruh konten website dapat dikelola secara dinamis melalui Admin Panel Filament sehingga perubahan data dapat dilakukan tanpa perlu mengubah kode program secara langsung.
+Project utama yang ditampilkan dalam portofolio ini adalah **Sistem Monitoring Service Elektronik**, sebuah aplikasi web yang membantu proses pengelolaan dan pemantauan layanan service elektronik secara digital.
 
-✨ Features
-Website
-1. Profile Showcase
-2. Project Portfolio
-3. Project Detail Page
-4. Contact Information
-5. Contact Form
+---
 
-Admin Panel
-1. Dashboard Monitoring
-2. Profile Management
-3. Project 
-4. Service 
-5. Contact Information 
-6. Contact Message
-7. User 
-8. Role 
-9. Activity Log
+## ✨ Features
 
-Sistem Monitoring Service Elektronik
-1. Monitoring status service
-2. Dashboard admin
-3. Tracking progress
-4. Manajemen pelanggan
+### 🌍 Website Features
 
-🏗️ Architecture
+- Profile / About
+- Project Portfolio Showcase
+- Project Detail Page
+- Services Showcase
+- Contact Information
 
-Sistem dibangun menggunakan pola arsitektur MVC (Model View Controller) yang memisahkan logika aplikasi, tampilan, dan pengelolaan data sehingga lebih mudah dikembangkan dan dipelihara.
+### 🔐 Admin Panel Features
 
-🛠️ Technology Stack
+- Dashboard Monitoring
+- Profile 
+- Project 
+- Service 
+- Contact Message
+- Contact Info
+- User Management
+- Activity Log Monitoring
 
-Laravel, Filament, MariaDB, Docker
+### ⚙️ Project Monitoring Features
 
-👨‍💻 Developer
+- Service Status Tracking
+- Customer Data Management
+- Progress Monitoring
+- Service History Management
+- Centralized Administration Dashboard
 
-Arum Syafitri Puspita Pratiwi
+---
 
-Teknik Informatika,
-Fakultas Ilmu Komputer
+## 📖 Project Highlight
+
+### Sistem Monitoring Service Elektronik
+
+Sistem Monitoring Service Elektronik merupakan aplikasi berbasis web yang dikembangkan untuk membantu usaha service elektronik dalam mengelola proses perbaikan perangkat secara lebih terstruktur dan efisien.
+
+#### Permasalahan
+
+- Pencatatan service masih dilakukan secara manual.
+- Data pelanggan berisiko hilang atau tidak terdokumentasi dengan baik.
+- Pelanggan kesulitan mengetahui progres perbaikan perangkat.
+- Penyampaian informasi status service sering terlambat.
+
+#### Solusi
+
+- Digitalisasi proses pencatatan service.
+- Monitoring progres perbaikan secara real-time.
+- Penyimpanan data pelanggan yang terpusat.
+- Informasi status service yang lebih transparan.
+- Riwayat service yang terdokumentasi dengan baik.
+
+---
+
+## 🏗️ System Architecture
+
+Website dikembangkan menggunakan konsep **MVC** untuk memisahkan logika aplikasi, tampilan, dan pengelolaan data sehingga kode lebih terstruktur dan mudah dikembangkan.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Description |
+|------------|------------|
+| Laravel    | Backend Framework |
+| Filament | Admin Panel |
+| MariaDB | Database Management System |
+| Docker | Containerization |
+
+---
+
+## 👩‍💻 Developer
+
+**Arum Syafitri Puspita Pratiwi**
+
+Teknik Informatika  
+Fakultas Ilmu Komputer  
 Universitas Esa Unggul
+
+---
+
+## 🎓 Academic Project
+
+Repository ini dibuat sebagai bagian dari UTS & Project Akhir Mata Kuliah **Pemrograman Web (CR001)** dan berfungsi sebagai media dokumentasi serta pengembangan Website Portofolio Personal berbasis Laravel.
