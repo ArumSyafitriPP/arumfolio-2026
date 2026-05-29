@@ -82,6 +82,21 @@ Website dikembangkan menggunakan konsep **MVC** untuk memisahkan logika aplikasi
 | Docker | Containerization |
 
 ---
+## 🚀 Installation
+
+Clone repository:
+
+git clone https://github.com/ArumSyafitriPP/arumfolio-2026.git
+
+Masuk ke folder project:
+
+cd perkuliahan/arumfolio
+
+Jalankan container:
+
+dcu
+
+---
 
 ## 👩‍💻 Identitas Mahasiswa
 
@@ -96,3 +111,7 @@ Universitas Esa Unggul
 ## 🎓 Academic Project
 
 Repository ini dibuat sebagai bagian dari UTS & Project Akhir Mata Kuliah **Pemrograman Web (CR001)** dan berfungsi sebagai media dokumentasi serta pengembangan Website Portofolio Personal berbasis Laravel.
+
+---
+
+## 📸 Screenshots / Demo
