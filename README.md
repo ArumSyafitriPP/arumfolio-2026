@@ -2,15 +2,13 @@
 
 ### Laravel Portfolio & Project Showcase
 
-Menampilkan profil profesional, portofolio proyek, layanan, dan Sistem Monitoring Service Elektronik dengan pengelolaan data melalui Admin Panel.
+Website portofolio personal berbasis Laravel yang menampilkan profil profesional, layanan, proyek, serta dokumentasi Project Akhir secara dinamis melalui Admin Panel Filament.
 
 ---
 
 ## 📌 Overview
 
-Arumfolio merupakan website portofolio personal berbasis Laravel yang dirancang untuk menampilkan profil profesional, proyek, layanan, dan informasi kontak secara modern dan responsif.
-Seluruh konten website dapat dikelola secara dinamis melalui Admin Panel Filament sehingga perubahan data dapat dilakukan tanpa perlu mengubah kode program secara langsung.
-Project utama yang ditampilkan dalam portofolio ini adalah **Sistem Monitoring Service Elektronik**, sebuah aplikasi web yang membantu proses pengelolaan dan pemantauan layanan service elektronik secara digital.
+Arumfolio merupakan website portofolio personal berbasis Laravel yang dirancang untuk menampilkan profil profesional, layanan, proyek, dan informasi kontak secara modern serta responsif. Seluruh konten website dikelola secara dinamis melalui Admin Panel Filament, termasuk dokumentasi Project Akhir berupa Sistem Monitoring Service Elektronik yang berfokus pada pengelolaan dan pemantauan layanan service elektronik secara digital.
 
 ---
 
@@ -79,15 +77,15 @@ Website dikembangkan menggunakan konsep **MVC** untuk memisahkan logika aplikasi
 | Technology | Description |
 |------------|------------|
 | Laravel    | Backend Framework |
-| Filament | Admin Panel |
+| Filament v3 | Admin Panel |
 | MariaDB | Database Management System |
 | Docker | Containerization |
 
 ---
 
-## 👩‍💻 Developer
+## 👩‍💻 Identitas Mahasiswa
 
-**Arum Syafitri Puspita Pratiwi**
+**Arum Syafitri Puspita Pratiwi - 20240801010**
 
 Teknik Informatika  
 Fakultas Ilmu Komputer  
