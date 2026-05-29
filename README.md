@@ -115,3 +115,5 @@ Repository ini dibuat sebagai bagian dari UTS & Project Akhir Mata Kuliah **Pemr
 ---
 
 ## 📸 Screenshots / Demo
+
+![Home Page](docs/home.png)
