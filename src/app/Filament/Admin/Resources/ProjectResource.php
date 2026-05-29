@@ -21,21 +21,42 @@ class ProjectResource extends Resource
 
     public static function form(Form $form): Form
     {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('title')
-                    ->required(),
-                Forms\Components\TextInput::make('slug')
-                    ->required(),
-                Forms\Components\TextInput::make('category'),
+    return $form
+        ->schema([
 
-                Forms\Components\TextInput::make('image')
-                    ->required()
-                    ->placeholder('assets/images/semo.png'),
-                Forms\Components\Textarea::make('short_description'),
-                Forms\Components\Textarea::make('description'),
-                Forms\Components\TextInput::make('tech_stack'),
-            ]);
+            Forms\Components\TextInput::make('title')
+                ->required(),
+
+            Forms\Components\TextInput::make('slug')
+                ->required(),
+
+            Forms\Components\TextInput::make('category'),
+
+            Forms\Components\FileUpload::make('image')
+                ->image()
+                ->directory('projects')
+                ->disk('public'),
+
+            Forms\Components\Textarea::make('short_description'),
+
+            Forms\Components\RichEditor::make('description')
+                ->columnSpanFull(),
+
+            Forms\Components\TagsInput::make('tech_stack'),
+
+            Forms\Components\RichEditor::make('problem_analysis')
+                ->columnSpanFull(),
+
+            Forms\Components\TagsInput::make('features'),
+
+            Forms\Components\RichEditor::make('architecture')
+                ->columnSpanFull(),
+
+            Forms\Components\FileUpload::make('diagram')
+                ->image()
+                ->directory('projects'),
+
+        ]);
     }
 
     public static function table(Table $table): Table
@@ -45,7 +66,7 @@ class ProjectResource extends Resource
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('category'),
-                Tables\Columns\TextColumn::make('tech_stack'),
+                Tables\Columns\TextColumn::make('tech_stack')->badge(),
             ])
             ->filters([
                 //

@@ -26,7 +26,7 @@ Free HTML CSS Template
                 <path d="M 30 40 L 50 60 L 70 40" fill="none" stroke="#ff3366" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="50" cy="70" r="3" fill="#ff3366"/>
             </svg>
-            <span>Arum Portfolio</span>
+            <span>My Portofolio</span>
         </a>
         <nav>
             <ul class="desktop-nav">
@@ -55,46 +55,52 @@ Free HTML CSS Template
 
         </div>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="home">
-        <div class="hero-left">
-            <img src="{{ asset('assets/images/foto-arum.jpeg') }}"
-                alt="foto-arum">
-        </div>
+<!-- HERO SECTION -->
+<section class="hero-section" id="home">
+
+    <div class="hero-left">
+
+        <img src="{{ asset('storage/' . $profile->photo) }}"
+            alt="{{ $profile->name }}">
+
+    </div>
 
     <div class="hero-right">
+
         <h1>
-            Arum Syafitri Puspita Pratiwi
+            {{ $profile->name }}
         </h1>
+
         <span class="hero-role">
-            Informatics Student 
+            {{ $profile->role }}
         </span>
-        <p class="hero-description">
-            Saya adalah seorang mahasiswa Teknik Informatika yang adaptif, logis, dan memiliki ketertarikan besar pada pengembangan teknologi masa kini. 
-            Berbekal stack keahlian fundamental dalam logika pemrograman, basis data, software development, serta kemampuan problem-solving yang kuat, 
-            saya selalu antusias untuk mengeksplorasi tren teknologi terbaru dan mengimplementasikannya ke dalam solusi digital yang nyata.
-        </p>
 
         <p class="hero-description">
-            Melalui kombinasi pemahaman teori di perkuliahan dan semangat belajar yang tinggi, 
-            saya fokus mengasah keterampilan teknisnya dan siap menyambut peluang magang, proyek kolaboratif, serta pengembangan karier di industri IT.
+            {{ $profile->description }}
         </p>
 
         <div class="hero-tags">
-            <span>Laravel</span>
-            <span>Filament</span>
-            <span>MariaDB</span>
-            <span>Web Development</span>
+
+            @foreach((array) $profile->tech_stack as $tech)
+
+                <span>
+                    {{ $tech }}
+                </span>
+
+            @endforeach
+
         </div>
+
     </div>
+
 </section>
 
 <!-- SHOWCASE SECTION -->
 <section class="showcase-section" id="portofolio">
     <div class="section-header">
-        <h2>Project Showcase</h2>
+        <h2>{{ $profile->project_title }}</h2>
         <p>
-            Project yang sedang saya kerjakan
+            {{ $profile->project_subtitle }}
         </p>
 
     </div>
@@ -102,7 +108,7 @@ Free HTML CSS Template
    <div class="showcase-grid">
     @foreach($projects as $project)
     <div class="showcase-card">
-        <img src="{{ asset('assets/images/Semo.png') }}"
+        <img src="{{ asset('storage/' . $project->image) }}"
             alt="{{ $project->title }}">
         <div class="showcase-content">
             <span class="showcase-label">
@@ -115,9 +121,11 @@ Free HTML CSS Template
                 {{ $project->short_description }}
             </p>
             <div class="project-tags">
+                @foreach($project->tech_stack as $tech)
                 <span class="tag">
-                    {{ $project->tech_stack }}
+                    {{ $tech }}
                 </span>
+                @endforeach
             </div>
             <a href="/project/{{ $project->slug }}"
                 class="view-project-btn">
@@ -134,18 +142,17 @@ Free HTML CSS Template
 <section id="contact" class="contact-section">
     <div class="contact-split">
         <div class="contact-info">
-            <h2>Let's Work Together</h2>
+            <h2>{{ $contact?->title }}</h2>
             <p>
-                Have a project in mind?
-                I'd love to hear about it.
+                {{ $contact?->description }}
             </p>
             <div class="contact-details">
                 <div class="contact-item">
                     <div class="contact-item-icon">📧</div>
                     <div class="contact-item-content">
                         <h4>Email</h4>
-                        <a href="#">
-                            arumsyafitri11@gmail.com
+                        <a href="mailto:{{ $contact?->email }}">
+                            {{ $contact?->email }}
                         </a>
                     </div>
                 </div>
@@ -154,8 +161,8 @@ Free HTML CSS Template
                     <div class="contact-item-icon">📱</div>
                     <div class="contact-item-content">
                         <h4>Phone</h4>
-                        <a href="#">
-                            081382238901
+                        <a href="tel:{{ $contact?->phone }}">
+                            {{ $contact?->phone }}
                         </a>
                     </div>
                 </div>
@@ -165,7 +172,7 @@ Free HTML CSS Template
                     <div class="contact-item-content">
                         <h4>Location</h4>
                         <a href="#">
-                            Indonesia
+                            {{ $contact?->location }}
                         </a>
                     </div>
                 </div>
