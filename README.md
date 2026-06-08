@@ -1,4 +1,16 @@
-# 🌐 ARUMFOLIO
+# 🌐 UTS PEMOGRAMAN WEB CR001 ARUMFOLIO
+
+---
+
+## 👩‍💻 Identitas Mahasiswa
+
+**Arum Syafitri Puspita Pratiwi - 20240801010**
+
+Teknik Informatika  
+Fakultas Ilmu Komputer  
+Universitas Esa Unggul
+
+---
 
 ### Laravel Portfolio & Project Showcase
 
@@ -97,17 +109,6 @@ Jalankan container:
 dcu
 
 ---
-
-## 👩‍💻 Identitas Mahasiswa
-
-**Arum Syafitri Puspita Pratiwi - 20240801010**
-
-Teknik Informatika  
-Fakultas Ilmu Komputer  
-Universitas Esa Unggul
-
----
-
 ## 🎓 Academic Project
 
 Repository ini dibuat sebagai bagian dari UTS & Project Akhir Mata Kuliah **Pemrograman Web (CR001)** dan berfungsi sebagai media dokumentasi serta pengembangan Website Portofolio Personal berbasis Laravel.
