@@ -19,8 +19,8 @@ class ContactInfoSeeder extends Seeder
             'email' =>
                 'arumsyafitri11@gmail.com',
 
-            'phone' =>
-                '081382238901',
+            'github' =>
+                'https://github.com/ArumSyafitriPP',
 
             'location' =>
                 'Indonesia',

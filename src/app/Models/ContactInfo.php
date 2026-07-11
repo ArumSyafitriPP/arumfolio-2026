@@ -11,7 +11,7 @@ class ContactInfo extends Model
         'title',
         'description',
         'email',
-        'phone',
+        'github',
         'location',
 
     ];

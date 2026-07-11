@@ -153,14 +153,17 @@
                 </div>
 
                 <div class="contact-item">
-                    <div class="contact-item-icon">📱</div>
-                    <div class="contact-item-content">
-                        <h4>Phone</h4>
-                        <a href="#">
-                            081382238901
-                        </a>
-                    </div>
+                <div class="contact-item-icon">
+                    <i class="fab fa-github"></i>
                 </div>
+
+                <div class="contact-item-content">
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/ArumSyafitriPP" target="_blank">
+                     @ArumSyafitriPP
+                    </a>
+                </div>
+            </div>
 
                 <div class="contact-item">
                     <div class="contact-item-icon">📍</div>

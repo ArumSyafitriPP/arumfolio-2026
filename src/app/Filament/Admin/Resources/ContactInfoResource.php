@@ -18,6 +18,8 @@ class ContactInfoResource extends Resource
     protected static ?string $model = ContactInfo::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Portfolio Management';
+    protected static ?string $navigationLabel = 'Contact Info';
 
     public static function form(Form $form): Form
     {
@@ -29,7 +31,7 @@ class ContactInfoResource extends Resource
                 ->rows(4),
                 Forms\Components\TextInput::make('email')
                 ->email(),
-                Forms\Components\TextInput::make('phone'),
+                Forms\Components\TextInput::make('github'),
                 Forms\Components\TextInput::make('location'),
             ]);
     }
@@ -40,7 +42,7 @@ class ContactInfoResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('email'),
-                Tables\Columns\TextColumn::make('phone'),
+                Tables\Columns\TextColumn::make('github'),
                 Tables\Columns\TextColumn::make('location'),
             ])
             ->filters([

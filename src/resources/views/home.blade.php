@@ -60,8 +60,8 @@ Free HTML CSS Template
 
     <div class="hero-left">
 
-        <img src="{{ asset('storage/' . $profile->photo) }}"
-            alt="{{ $profile->name }}">
+        <img src="{{ asset('assets/images/foto-arum.jpeg') }}"
+            alt="Arum Syafitri Puspita Pratiwi">
 
     </div>
 
@@ -158,14 +158,18 @@ Free HTML CSS Template
                 </div>
 
                 <div class="contact-item">
-                    <div class="contact-item-icon">📱</div>
-                    <div class="contact-item-content">
-                        <h4>Phone</h4>
-                        <a href="tel:{{ $contact?->phone }}">
-                            {{ $contact?->phone }}
-                        </a>
-                    </div>
+                <div class="contact-item-icon">
+                    <i class="fab fa-github"></i>
                 </div>
+
+                <div class="contact-item-content">
+                    <h4>GitHub</h4>
+                    <a href="{{ $contact?->github }}"
+                     target="_blank">
+                     {{ str_replace('https://github.com/', '@', $contact?->github) }}
+                    </a>
+                </div>
+            </div>
 
                 <div class="contact-item">
                     <div class="contact-item-icon">📍</div>
@@ -208,7 +212,7 @@ Free HTML CSS Template
     <p>
         Copyright © 2026 Arum Portfolio.
     </p>
-
+    
 </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

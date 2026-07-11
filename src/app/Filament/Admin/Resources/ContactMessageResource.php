@@ -18,6 +18,8 @@ class ContactMessageResource extends Resource
     protected static ?string $model = ContactMessage::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Portfolio Management';
+    protected static ?string $navigationLabel = 'Contact Message';
 
     public static function form(Form $form): Form
     {

@@ -14,19 +14,19 @@ class ProjectSeeder extends Seeder
     {
         Project::create([
 
-            'title' => 'Sistem Monitoring Service Elektronik',
+            'title' => 'Sistem Penerimaan Murid Baru Sekolah Dasar',
 
-            'slug' => 'service-monitoring',
+            'slug' => 'SPMB-SD',
 
             'category' => 'Web Development',
 
             'image' => null,
 
             'short_description' =>
-                'Sistem monitoring service elektronik berbasis web.',
+                'Sistem Penerimaan Murid Baru Sekolah Dasar berbasis web untuk mengelola proses pendaftaran dan seleksi siswa baru.',
 
             'description' =>
-                'Sistem monitoring service elektronik berbasis Laravel dan Filament untuk monitoring progress service pelanggan.',
+                'Sistem Penerimaan Murid Baru Sekolah Dasar berbasis Laravel dan Filament yang digunakan untuk mengelola proses pendaftaran siswa baru, verifikasi data calon murid, serta monitoring proses penerimaan secara digital.',
 
             'tech_stack' => [
                 'Laravel',
@@ -36,13 +36,15 @@ class ProjectSeeder extends Seeder
             ],
 
             'problem_analysis' =>
-                'Proses pencatatan manual pada bengkel servis menyebabkan risiko kehilangan data dan sulit melacak status service.',
+                'Proses penerimaan murid baru yang masih dilakukan secara manual menyebabkan kesulitan dalam pengelolaan data calon siswa, proses verifikasi dokumen yang lambat, serta kurang efektifnya monitoring status pendaftaran.',
 
             'features' => [
-                'Monitoring status service',
-                'Dashboard admin',
-                'Tracking progress',
-                'Manajemen pelanggan',
+                'Pendaftaran murid baru secara online',
+                'Manajemen data calon siswa',
+                'Verifikasi dokumen pendaftaran',
+                'Dashboard admin sekolah',
+                'Monitoring status penerimaan',
+                'Pengelolaan data siswa diterima',
             ],
 
             'architecture' =>

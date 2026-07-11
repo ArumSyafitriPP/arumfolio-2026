@@ -16,7 +16,8 @@ class ProfileSeeder extends Seeder
 
             'name' => 'Arum Syafitri Puspita Pratiwi',
             'role' => 'Informatics Student',
-            'description' => 'Saya adalah seorang mahasiswa Teknik Informatika yang adaptif, logis, dan memiliki ketertarikan besar pada pengembangan teknologi masa kini.',
+            'description' => 'Saya adalah mahasiswa Teknik Informatika yang adaptif, analitis, dan memiliki passion dalam pengembangan teknologi. Saya memiliki ketertarikan pada bidang Data Science,
+             Artificial Intelligence (AI), serta Web Development, dengan fokus membangun solusi digital yang inovatif, terstruktur, dan relevan dengan kebutuhan masa kini.',
             'photo' => null,
             'tech_stack' => [
                 'Laravel',
